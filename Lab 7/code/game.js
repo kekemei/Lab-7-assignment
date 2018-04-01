@@ -305,7 +305,7 @@ Player.prototype.act = function(step, level, keys) {
 
   var otherActor = level.actorAt(this);
   if (otherActor)
-    level.playerTouched(other.Actor.type, otherActor);
+    level.playerTouched(otherActor.type, otherActor);
 };
 
 Level.prototype.playerTouched = function(type, actor) {
